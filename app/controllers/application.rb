@@ -1,6 +1,7 @@
 get '/applications' do
-	@applications = Application.all
-	# @applications.sort_by {|application| application.date_applied}
+	@applications = Application.where(user_id: current_user.id)
+	# @applications = @applications.sort_by {|application| application.date_applied} #oldest on top
+	@applications = @applications.sort {|previous, current| current.date_applied <=> previous.date_applied} #newest on top
 	erb :'applications/index'
 end
 

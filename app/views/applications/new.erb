@@ -1,6 +1,6 @@
 </section id="new-application-section">
 	<form action="/applications" method="POST">
-		<input type="hidden" name="application[user_id]" value="<% current_user.id %>">
+		<input type="hidden" name="application[user_id]" value="<%= current_user.id %>">
 		<label for="application[company]">Company:</label>
 		<input type="text" name="application[company]">
 		<br>

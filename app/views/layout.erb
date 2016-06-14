@@ -11,6 +11,7 @@
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/css/application.css">
+  <link rel="stylesheet" href="/css/forms.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
@@ -29,15 +30,15 @@
 </head>
 <body>
   <nav>
-      <a href="/">Home | <a>
+      <a href="/">Home | </a>
     <% if !logged_in? %>
-      <a href="/login">Login | <a>
-      <a href="/users/new">New<a>
+      <a href="/login">Login | </a>
+      <a href="/users/new">New</a>
     <% end %>
     <% if logged_in? %>
-      <a href="/applications/new">New Application | <a> 
-      <a href="/applications">My Applications | <a>  
-      <a href="/logout">Logout<a>
+      <a href="/applications/new">New Application | </a> 
+      <a href="/applications">My Applications | </a>  
+      <a href="/logout">Logout</a>
     <% end %>
   </nav>
   <%= yield %>
