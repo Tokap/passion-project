@@ -1,0 +1,20 @@
+<label for="user[email]">Email:</label>
+<input type="email" name="user[email]" value="<%= @user.email %>">
+<br>
+ <label for="user[password]">Password:</label>
+<input type="password" name="user[password]">
+<br>
+
+<!-- validation errors -->
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
+
+<!-- other errors -->
+<% if @errors %>
+  <% @errors.each do |error| %>
+    <%= error %>
+  <% end %>
+<% end %>
