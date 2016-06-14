@@ -1,14 +1,14 @@
-/* FORM STYLING */
+/* APPLICATION FORM STYLING */
 
 .form-container {
    border: 3px solid #357fa6;
    background: #46524d;
-   background: -webkit-gradient(linear, left top, left bottom, from(#68e600), to(#46524d));
-   background: -webkit-linear-gradient(top, #68e600, #46524d);
-   background: -moz-linear-gradient(top, #68e600, #46524d);
-   background: -ms-linear-gradient(top, #68e600, #46524d);
-   background: -o-linear-gradient(top, #68e600, #46524d);
-   background-image: -ms-linear-gradient(top, #68e600 0%, #46524d 100%);
+   background: -webkit-gradient(linear, left top, left bottom, from(#00e67f), to(#46524d));
+   background: -webkit-linear-gradient(top, #00e67f, #46524d);
+   background: -moz-linear-gradient(top, #00e67f, #46524d);
+   background: -ms-linear-gradient(top, #00e67f, #46524d);
+   background: -o-linear-gradient(top, #00e67f, #46524d);
+   background-image: -ms-linear-gradient(top, #00e67f 0%, #46524d 100%);
    -webkit-border-radius: 25px;
    -moz-border-radius: 25px;
    border-radius: 25px;
