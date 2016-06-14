@@ -4,8 +4,8 @@ class CreateUsersTable < ActiveRecord::Migration
       t.string :username, null: false
       t.string :email, null: false
       t.string :password_digest, null: false
-      t.string :specialization {default: "Undeclared"}
-      t.string :general_profession {default: "Undeclared"}
+      t.string :specialization { default: "Undeclared" }
+      t.string :general_profession { default: "Undeclared" }
 
       t.timestamps
     end
