@@ -6,17 +6,18 @@
   margin: auto;
   width: 1000px;
   border-style: solid;
-
   }*/
 
  /* TABLE FORMATTING */
 
  /** page structure **/
 #wrapper {
+	font-family: "Times New Roman", Georgia, Serif;
   display: block;
-  width: 85%;
-  background: #fff;
-  margin: 0 auto;
+  width: 1300px;
+  /*min-width: 95%;*/
+  background: #f3f3f3;
+  margin: auto;
   padding: 10px 17px;
   -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
 }
@@ -25,6 +26,7 @@
   margin: 0 auto;
   font-size: 1.2em;
   margin-bottom: 15px;
+
 }
 
 
@@ -55,7 +57,8 @@
 }
 
 
-#all-applications tbody tr { 
+#all-applications tbody tr {
+	font-family: "Times New Roman", Georgia, Serif;
   color: #555;
 }
 #all-applications tbody tr td {

@@ -1,43 +1,26 @@
-</section id="new-application-section">
-	<form action="/applications" method="POST" class="form-container">
-		<div class="form-title"><h2>Add a New Job Application</h2></div>
-		<input type="hidden" name="application[user_id]" value="<%= current_user.id %>">
-		<label for="application[company]">Company:</label>
-		<input type="text" name="application[company]">
-		<br>
-		 <label for="application[position_title]">Position Title:</label>
-		<input type="text" name="application[position_title]">
-		<br>
-		 <label for="application[reference_number]">Reference Number:</label>
-		<input type="text" name="application[reference_number]">
-		<br>
-		 <label for="application[contact_name]">Contact Name:</label>
-		<input type="text" name="application[contact_name]">
-		<br>
-		 <label for="application[phone]">Phone Number:</label>
-		<input type="text" name="application[phone]">
-		<br>
-		 <label for="application[email]">Email:</label>
-		<input type="email" name="application[email]">
-		<br>
-		 <label for="application[date_applied]">Date Applied:</label>
-		<input type="date" name="application[date_applied]">
-		<br>
+<section id="new-application-section">
+
+	<form class="form-container" action="/applications" method="POST">
+		<div class="form-title"><h2>New Application Information</h2></div>
+			<input type="hidden" name="application[user_id]" value="<%= current_user.id %>">
+		<div class="form-title">Company</div>
+			<input class="form-field" type="text" name="application[company]" /><br />
+		<div class="form-title">Position Title</div>
+			<input class="form-field" type="text" name="application[position_title]" /><br />
+		<div class="form-title">Reference Number</div>
+			<input class="form-field" type="text" name="application[reference_number]" /><br />
+		<div class="form-title">Contact Name</div>
+			<input class="form-field" type="text" name="application[contact_name]" /><br />
+		<div class="form-title">Phone Number</div>
+			<input class="form-field" type="text" name="application[phone]" /><br />
+		<div class="form-title">Email</div>
+			<input class="form-field" type="email" name="application[email]" /><br />
+		<div class="form-title">Date Applied</div>
+			<input class="form-field" type="date" name="application[date_applied]" /><br />
 		<div class="submit-container">
-		<input type="submit" value="Record your hard work!">
+			<input class="submit-button" type="submit" value="Submit" />
 		</div>
 	</form>
+	
 	<p class="error"> <% @error %> </p>
 </section>
-
-
-<form class="form-container">
-<div class="form-title"><h2>Sign up</h2></div>
-<div class="form-title">Name</div>
-<input class="form-field" type="text" name="firstname" /><br />
-<div class="form-title">Email</div>
-<input class="form-field" type="text" name="email" /><br />
-<div class="submit-container">
-<input class="submit-button" type="submit" value="Submit" />
-</div>
-</form>

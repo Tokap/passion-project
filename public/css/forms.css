@@ -18,9 +18,10 @@
    font-family: 'Helvetica Neue',Helvetica,sans-serif;
    text-decoration: none;
    vertical-align: middle;
-   min-width:300px;
+   min-width:350px;
    padding:20px;
-   width:300px;
+   width:350px;
+   margin: auto;
    }
 .form-field {
    border: 1px solid #c9b7a2;
