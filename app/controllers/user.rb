@@ -29,12 +29,12 @@ post '/login' do
   if @user
     #success
     session[:user_id] = @user.id
-    redirect "/users/#{@user.id}"
+    redirect "/" #PLACEHOLDER
   else
     #failure
     @user = User.new(user_hash)
     @errors = ["credentials don't match our records"]
-    erb :'users/login'
+    erb :'login/login'
   end
 end
 

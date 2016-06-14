@@ -8,13 +8,13 @@
 <!-- validation errors -->
 <% if @user.errors.any? %>
   <% @user.errors.full_messages.each do |error| %>
-    <%= error %>
+   <p class="error"> <%= error %> <p>
   <% end %>
 <% end %>
 
 <!-- other errors -->
 <% if @errors %>
   <% @errors.each do |error| %>
-    <%= error %>
+    <p class="error"> <%= error %> <p>
   <% end %>
 <% end %>
