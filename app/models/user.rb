@@ -1,7 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :posts, {class_name: :Post, foreign_key: :author_id}
-  has_many :comments, {class_name: :Comment, foreign_key: :author_id}
-  has_many :votes
+  has_many :applications
 
   validates :username, :email, :password_digest, { presence: true }
   validates :email, uniqueness: true

@@ -34,7 +34,9 @@
       <a href="/login">Login | <a>
       <a href="/users/new">New<a>
     <% end %>
-    <% if logged_in? %>  
+    <% if logged_in? %>
+      <a href="/applications/new">New Application | <a> 
+      <a href="/applications">My Applications | <a>  
       <a href="/logout">Logout<a>
     <% end %>
   </nav>

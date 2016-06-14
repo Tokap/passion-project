@@ -1,0 +1,67 @@
+.error {
+	color: red;
+}
+
+/*#all-applications {
+  margin: auto;
+  width: 1000px;
+  border-style: solid;
+
+  }*/
+
+ /* TABLE FORMATTING */
+
+ /** page structure **/
+#wrapper {
+  display: block;
+  width: 80%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+}
+
+#all-applications {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+#all-applications thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#all-applications thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#all-applications thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#all-applications thead tr th.headerSortUp, #all-applications thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#all-applications thead tr th.headerSortUp span {
+  background-image: url('http://i.imgur.com/SP99ZPJ.png');
+}
+#all-applications thead tr th.headerSortDown span {
+  background-image: url('http://i.imgur.com/RkA9MBo.png');
+}
+
+
+#all-applications tbody tr { 
+  color: #555;
+}
+#all-applications tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#all-applications tbody tr td.lalign {
+  text-align: left;
+}

@@ -1,0 +1,33 @@
+
+<section id="wrapper">
+	<table id="all-applications" cellspacing="0" cellpadding="0">
+	<thead>
+	<tr>
+		<th><span>Company</span> </th>
+		<th><span>Position Title</span> </th>
+		<th><span>Reference Number</span> </th>
+		<th><span>Contact Name</span> </th>
+		<th><span>Phone Number</span> </th>
+		<th><span>Email</span> </th>
+		<th><span>Date Applied</span> </th>
+	</tr>
+	</thead>
+	<% @applications.each do |application| %>
+	<tbody>
+	<tr>
+		<td class="lalign"> <%= application.company || "N/A" %> </td>
+		<td> <%= application.position_title || "N/A" %> </td>
+		<td> <%= application.reference_number || "N/A" %> </td>
+		<td> <%= application.contact_name || "N/A" %> </td>
+		<td> <%= application.phone || "N/A" %> </td>
+		<td> <%= application.email || "N/A" %> </td>
+		<td> <%= application.date_applied || "N/A" %> </td>
+	</tr>
+	</tbody>
+	<% end %>
+
+	</table>
+
+
+
+</section>

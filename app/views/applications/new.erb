@@ -1,0 +1,28 @@
+</section id="new-application-section">
+	<form action="/applications" method="POST">
+		<input type="hidden" name="application[user_id]" value="<% current_user.id %>">
+		<label for="application[company]">Company:</label>
+		<input type="text" name="application[company]">
+		<br>
+		 <label for="application[position_title]">Position Title:</label>
+		<input type="text" name="application[position_title]">
+		<br>
+		 <label for="application[reference_number]">Reference Number:</label>
+		<input type="text" name="application[reference_number]">
+		<br>
+		 <label for="application[contact_name]">Contact Name:</label>
+		<input type="text" name="application[contact_name]">
+		<br>
+		 <label for="application[phone]">Phone Number:</label>
+		<input type="text" name="application[phone]">
+		<br>
+		 <label for="application[email]">Email:</label>
+		<input type="email" name="application[email]">
+		<br>
+		 <label for="application[date_applied]">Date Applied:</label>
+		<input type="date" name="application[date_applied]">
+		<br>
+		<input type="submit" value="Record your hard work!">
+	</form>
+	<p class="error"> <% @error %> </p>
+</section>
