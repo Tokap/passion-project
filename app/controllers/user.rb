@@ -20,7 +20,7 @@ end
 
 get '/login' do
   @user = User.new
-  erb :'users/login'
+  erb :'login/login'
 end
 
 post '/login' do
