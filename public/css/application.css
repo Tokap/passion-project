@@ -1,5 +1,12 @@
 /* FROM ASSESSMENT */
 
+.application-details-row {
+  border-bottom: solid;
+  /*border-color: #333;*/
+}
+
+
+
 #entire-thing {
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: #46BFE8;
@@ -35,9 +42,7 @@
   font-size: 1.2em;
   margin-bottom: 15px;
   color: white;
-
 }
-
 
 #all-applications thead {
   cursor: pointer;
@@ -66,7 +71,6 @@
 #all-applications thead tr th.headerSortDown span {
   background-image: url('http://i.imgur.com/RkA9MBo.png');
 }
-
 
 #all-applications tbody tr {
   color: #555;
