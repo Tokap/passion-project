@@ -1,0 +1,30 @@
+<section id="view-application-section">
+
+  <div class="form-title"><h2>Application Details</h2></div>
+    <div class="form-title tester">Company</div>
+      <text class="app-details" > <%= @application.company %> </text><br />
+    <div class="form-title tester">Position Title</div>
+      <text class="app-details" > <%= @application.position_title %> </text><br />
+    <div class="form-title tester">Reference Number</div>
+      <text class="app-details" > <%= @application.reference_number %> </text><br />
+    <div class="form-title tester">Contact Name</div>
+      <text class="app-details" > <%= @application.contact_name %> </text><br />
+    <div class="form-title tester">Phone Number</div>
+      <text class="app-details" > <%= @application.phone %> </text><br />
+    <div class="form-title tester">Email</div>
+      <text class="app-details" > <%= @application.email %> </text><br />
+    <div class="form-title tester">Date Applied</div>
+      <text class="app-details" > <%= @application.date_applied %> </text><br />
+    <div class="form-title tester">Additional Notes</div>
+    <textarea class="app-details" rows='7' cols='20' wrap="hard" readonly> <%= @application.notes %> </textarea>
+      <br />
+    <a href="/applications/<%= @application.id %>/edit" id="edit-button">Edit</a>
+
+  <form action="/applications/<%= @application.id %>" method="POST" class="delete-option">
+    <input type="hidden" name="_method" value="DELETE">
+    <div class="submit-container-too">
+      <input class="submit-button" type="submit" value="Dead end. Kill it with fire." />
+    </div>
+  </form>
+</section>
+

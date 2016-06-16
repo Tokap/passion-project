@@ -1,0 +1,10 @@
+<section class="quick-view-section">
+  <input type="hidden" value="<%= application.days_since_creation %>">
+    <text class="app-details header-company-name" > <a href="/applications/<%= application.id %>"> <%= application.company %> </a> </text><br />
+  <div class="form-title tester">Position Title</div>
+    <text class="app-details" > <%= application.position_title %> </text><br />
+  <div class="form-title tester">Contact Name</div>
+    <text class="app-details" > <%= application.contact_name %> </text><br />
+  <div class="form-title tester">Phone Number</div>
+    <text class="app-details" > <%= application.phone %> </text><br />
+</section>

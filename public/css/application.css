@@ -50,12 +50,12 @@
   border: solid;
   border-color: black;
 }
-#all-applications thead tr th { 
+#all-applications thead tr th {
   font-weight: bold;
   padding: 12px 30px;
   padding-left: 42px;
 }
-#all-applications thead tr th span { 
+#all-applications thead tr th span {
   padding-right: 20px;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -82,3 +82,30 @@
 #all-applications tbody tr td.lalign {
   text-align: left;
 }
+
+
+
+#edit-button {
+  display: inline-block;
+  float: left;
+  padding-bottom: -50px;
+  color: red;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.submit-container-too {
+  float: left;
+  display: inline-block;
+  margin: 0 0 30px 15px;
+}
+
+.submit-container-one {
+  margin-left: 40px;
+  display: inline-block;
+}
+
+
+
+

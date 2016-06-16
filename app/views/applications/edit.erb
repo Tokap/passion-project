@@ -1,0 +1,37 @@
+<section id="edit-application-section">
+
+  <form class="form-container" action="/applications/<%= @application.id %>" method="POST">
+    <input type="hidden" name="_method" value="patch">
+    <div class="form-title"><h2>Edit Application</h2></div>
+      <input type="hidden" name="application[user_id]" value="<%= current_user.id %>">
+    <div class="form-title">Company</div>
+      <input class="form-field" type="text" name="application[company]" value="<%= @application.company %>" /><br />
+    <div class="form-title">Position Title</div>
+      <input class="form-field" type="text" name="application[position_title]" value="<%= @application.position_title %>"/><br />
+    <div class="form-title">Reference Number</div>
+      <input class="form-field" type="text" name="application[reference_number]" value="<%= @application.reference_number %>"/><br />
+    <div class="form-title">Contact Name</div>
+      <input class="form-field" type="text" name="application[contact_name]" value="<%= @application.contact_name %>"/><br />
+    <div class="form-title">Phone Number</div>
+      <input class="form-field" type="text" name="application[phone]" value="<%= @application.phone %>"/><br />
+    <div class="form-title">Email</div>
+      <input class="form-field" type="email" name="application[email]" value="<%= @application.email %>"/><br />
+    <div class="form-title">Date Applied</div>
+      <input class="form-field" type="date" name="application[date_applied]" value="<%= @application.date_applied %>"/><br />
+    <div class="form-title">Additional Notes</div>
+      <textarea class="form-field" rows='7' cols='20' name="application[notes]" wrap="hard"> <%= @application.notes %> </textarea>
+      <br />
+    <div class="submit-container">
+      <input class="submit-button" type="submit" value="Submit" />
+    </div>
+  </form>
+
+  <form class="form-container" action="/applications/<%= @application.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <div class="form-title"><h2>Well that didn't go as hoped...</h2></div>
+    <div class="submit-container-one">
+      <input class="submit-button" type="submit" value="Dead end. Kill it with fire." />
+    </div>
+  </form>
+
+</section>

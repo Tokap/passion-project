@@ -1,0 +1,19 @@
+#view-application-section {
+  display: inline-block;
+  background: #FCC02D;
+  padding: 0 30px;
+  margin-left: 25%;
+  border: solid;
+}
+
+.app-details {
+  border: 1px solid #333;
+  background: #11b7d4;
+  padding:8px;
+  margin-bottom:20px;
+  width:280px;
+}
+
+.tester {
+  margin-top: 20px;
+}

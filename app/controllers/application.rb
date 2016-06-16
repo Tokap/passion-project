@@ -1,7 +1,6 @@
 get '/applications' do
 	@applications = Application.where(user_id: current_user.id)
-	# @applications = @applications.sort_by {|application| application.date_applied} #oldest on top
-	@applications = @applications.sort {|previous, current| current.date_applied <=> previous.date_applied} #newest on top
+	@applications = @applications.sort {|previous, current| previous.company <=> current.company} #newest on top
 	erb :'applications/index'
 end
 
@@ -18,10 +17,27 @@ post '/applications' do
 		@error = "Error: Missing information!"
 		status 422
 		erb :'applications/new'
-	end	
+	end
 end
 
-get 'applications/:id' do
-	#add everything
-	"Coming Soon"
+get '/applications/:id' do
+	@application = Application.find(params[:id])
+	erb :'applications/show'
+end
+
+get '/applications/:id/edit' do
+	@application = Application.find(params[:id])
+	erb :'applications/edit'
+end
+
+patch '/applications/:id' do
+	@application = Application.find(params[:id])
+	@application.update(params[:application])
+	redirect "/applications/#{@application.id}"
+end
+
+delete '/applications/:id' do
+	@application = Application.find(params[:id])
+	@application.destroy
+	redirect '/'
 end

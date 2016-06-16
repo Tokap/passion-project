@@ -1,8 +1,10 @@
-<section>
+<section class="homepage-header">
 	<h1>The JHunters Reprieve</h1>
 	<h2>Job Hunt Tracker and Monotony Reduction System</h2>
 </section>
 
-<section>
-	
+<section id="application-summary-main-page">
+<% @applications.each do |application| %>
+	<%= erb :'/applications/_details', locals: {application: application} %>
+<% end %>
 </section>
