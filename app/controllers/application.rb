@@ -20,3 +20,8 @@ post '/applications' do
 		erb :'applications/new'
 	end	
 end
+
+get 'applications/:id' do
+	#add everything
+	"Coming Soon"
+end
