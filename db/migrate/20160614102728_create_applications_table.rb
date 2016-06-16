@@ -9,6 +9,7 @@ class CreateApplicationsTable < ActiveRecord::Migration
       t.string :contact_name
       t.string :phone
       t.string :email
+      t.string :notes
       
       t.date :date_applied
       t.boolean :followed_up

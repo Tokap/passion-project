@@ -17,10 +17,18 @@
 			<input class="form-field" type="email" name="application[email]" /><br />
 		<div class="form-title">Date Applied</div>
 			<input class="form-field" type="date" name="application[date_applied]" /><br />
+		<div class="form-title">Additional Notes</div>
+			<textarea class="form-field" rows='7' cols='20' name="application[notes]" wrap="hard"></textarea>
+			<br />
 		<div class="submit-container">
 			<input class="submit-button" type="submit" value="Submit" />
 		</div>
 	</form>
 	
 	<p class="error"> <% @error %> </p>
+
+
+
+
+
 </section>
