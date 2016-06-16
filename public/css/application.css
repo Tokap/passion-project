@@ -1,3 +1,12 @@
+/* FROM ASSESSMENT */
+
+#entire-thing {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #46BFE8;
+}
+
+
+
 .error {
 	color: red;
 }
@@ -12,11 +21,10 @@
 
  /** page structure **/
 #wrapper {
-	font-family: "Times New Roman", Georgia, Serif;
   display: block;
   width: 1300px;
-  /*min-width: 95%;*/
-  background: #f3f3f3;
+  border: solid;
+  background: #FCC02D;
   margin: auto;
   padding: 10px 17px;
   -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
@@ -26,13 +34,16 @@
   margin: 0 auto;
   font-size: 1.2em;
   margin-bottom: 15px;
+  color: white;
 
 }
 
 
 #all-applications thead {
   cursor: pointer;
-  background: #c9dff0;
+  background: #00B0B6;
+  border: solid;
+  border-color: black;
 }
 #all-applications thead tr th { 
   font-weight: bold;
@@ -58,7 +69,6 @@
 
 
 #all-applications tbody tr {
-	font-family: "Times New Roman", Georgia, Serif;
   color: #555;
 }
 #all-applications tbody tr td {
