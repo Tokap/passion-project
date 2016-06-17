@@ -4,9 +4,9 @@
 </section>
 
 <% if logged_in? %>
-<section id="application-summary-main-page">
-<% @applications.each do |application| %>
-	<%= erb :'/applications/_details', locals: {application: application} %>
-<% end %>
-</section>
+  <section id="application-summary-main-page">
+  <% @applications.each do |application| %>
+  	<%= erb :'/applications/_details', locals: {application: application} %>
+  <% end %>
+  </section>
 <% end %>
