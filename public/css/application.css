@@ -1,7 +1,52 @@
+/*MISSION STATEMENT*/
+
+.mission-statement-section {
+  display: inline-block;
+  background: #FCC02D;
+  border: 3px solid black;
+  padding: 15px 10px;
+  margin: 0 20px;
+}
+
+.mission-statement-green {
+  padding: 0 10px 0 5px;
+  display: inline-block;
+  background-color: #51A137;
+  border-style: solid;
+}
+
+.mission-statement-amber {
+  padding: 0 10px 0 5px;
+  display: inline-block;
+  background-color: #E8A60C;
+  border-style: solid;
+}
+
+.mission-statement-gray {
+  padding: 0 10px 0 5px;
+  display: inline-block;
+  background-color: #C0C0C0;
+  border-style: solid;
+}
+
+.mission-statement-blue {
+  padding: 0 10px 0 5px;
+  display: inline-block;
+  background-color: #0DFFC6;
+  border-style: solid;
+}
+
+#pitch {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: -2px;
+}
+
+/*HIDE*/
+
 .hidden {
   display: none;
 }
-
 
 /* FROM ASSESSMENT */
 

@@ -24,6 +24,8 @@ require 'bcrypt'
 
 require 'pony'
 
+require 'whenever'
+
 enable :sessions
 
 # Some helper constants for path-centric logic
