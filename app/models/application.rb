@@ -4,9 +4,18 @@ class Application < ActiveRecord::Base
 
   def days_since_application
     days_passed = (Date.today - date_applied).to_i
-    return "New" if days_passed < 7
-    return "Hot" if days_passed >= 7 && days_passed <= 14
-    return "Frozen" if days_passed > 35
-    return "Cold" if days_passed > 14
+    return days_passed
+  end
+
+  def application_status
+    if self.days_since_application < 7
+      return "#E8A60C" #ORANGE
+    elsif self.days_since_application >= 7 && self.days_since_application <= 14
+      return "#51A137" #GREEN
+    elsif self.days_since_application > 14
+      return "#0DFFC6" #BLUE
+    elsif self.days_since_application > 35
+      return "#2B0CE8" #DARK BLUE
+    end
   end
 end
