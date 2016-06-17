@@ -19,7 +19,16 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every :day, :at => '1:05pm' do
+every :day, :at => '3:20pm' do
 	# File.open(test, 'w') { |file| file.write("your text") }
-	command "ruby test.rb"
+	rake "email:send"
 end
+
+# (1..24).each do |hour|
+# 	(0..59).each do |minute|
+# 		every :day, :at => "#{hour}:#{minute}" do
+# 			# File.open(test, 'w') { |file| file.write("your text") }
+# 			command "ruby /Users/tokap/Passion-project/passion-project/test.rb"
+# 		end
+# 	end
+# end
