@@ -22,6 +22,8 @@ require 'erb'
 
 require 'bcrypt'
 
+require 'pony'
+
 enable :sessions
 
 # Some helper constants for path-centric logic

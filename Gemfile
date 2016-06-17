@@ -16,6 +16,8 @@ gem 'shotgun'
 
 gem 'bcrypt'
 
+gem 'pony', '~> 1.11'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
