@@ -12,7 +12,7 @@ post '/applications' do
 	@application = Application.new(params[:application])
 	if @application.valid?
 		@application.save
-		redirect '/' #REDIRECT TO SHOW PAGE
+		redirect "/applications/#{@application.id}" #REDIRECT TO SHOW PAGE
 	else
 		@error = "Error: Missing information!"
 		status 422

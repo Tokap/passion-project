@@ -16,7 +16,7 @@
     <div class="form-title tester">Date Applied</div>
       <text class="app-details" > <%= @application.date_applied %> </text><br />
     <div class="form-title tester">Additional Notes</div>
-    <textarea class="app-details" rows='7' cols='20' wrap="hard" readonly> <%= @application.notes %> </textarea>
+    <textarea class="app-details" rows='7' cols='20' wrap="hard" readonly><%= @application.notes %> </textarea>
       <br />
     <a href="/applications/<%= @application.id %>/edit" id="edit-button">Edit</a>
 

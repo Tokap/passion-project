@@ -9,13 +9,14 @@ class Application < ActiveRecord::Base
 
   def application_status
     if self.days_since_application < 7
-      return "#E8A60C" #ORANGE
+      return "#E8A60C" #ORANGE (TOO SOON. DO NOTHING.)
     elsif self.days_since_application >= 7 && self.days_since_application <= 14
-      return "#51A137" #GREEN
-    elsif self.days_since_application > 14
-      return "#0DFFC6" #BLUE
+      return "#51A137" #GREEN (ACTION SUGGESTED)
     elsif self.days_since_application > 35
-      return "#2B0CE8" #DARK BLUE
+      return "#C0C0C0" #GRAY (SUPER DEAD)
+    elsif self.days_since_application > 14
+      return "#0DFFC6" #TEAL BLUE (BASICALLY DEAD)
+
     end
   end
 end

@@ -5,10 +5,10 @@
 	<tr>
 		<th><span>Company</span> </th>
 		<th><span>Position Title</span> </th>
-		<th><span>Reference Number</span> </th>
-		<th><span>Contact Name</span> </th>
-		<th><span>Phone Number</span> </th>
-		<th><span>Email</span> </th>
+		<th class="unessentials"><span>Reference Number</span> </th>
+		<th class="unessentials"><span>Contact Name</span> </th>
+		<th class="unessentials"><span>Phone Number</span> </th>
+		<th class="unessentials"><span>Email</span> </th>
 		<th><span>Date Applied</span> </th>
 	</tr>
 	</thead>
@@ -17,10 +17,10 @@
 	<tr class="application-details-row">
 		<td class="lalign"><a href="/applications/<%= application.id %>"> <%= application.company || "N/A" %> </a></td>
 		<td> <%= application.position_title || "N/A" %> </td>
-		<td> <%= application.reference_number || "N/A" %> </td>
-		<td> <%= application.contact_name || "N/A" %> </td>
-		<td> <%= application.phone || "N/A" %> </td>
-		<td> <%= application.email || "N/A" %> </td>
+		<td class="unessentials"> <%= application.reference_number || "N/A" %> </td>
+		<td class="unessentials"> <%= application.contact_name || "N/A" %> </td>
+		<td class="unessentials"> <%= application.phone || "N/A" %> </td>
+		<td class="unessentials"> <%= application.email || "N/A" %> </td>
 		<td> <%= application.date_applied || "N/A" %> </td>
 	</tr>
 	</tbody>

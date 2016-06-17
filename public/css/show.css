@@ -17,3 +17,30 @@
 .tester {
   margin-top: 20px;
 }
+
+/* BREAKING DOWN THE MAIN PAGE */
+
+@media (max-width: 780px) {
+  .unessentials {
+    display: none;
+  }
+  #wrapper {
+    width: 550px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
