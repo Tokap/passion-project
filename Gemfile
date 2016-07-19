@@ -18,6 +18,8 @@ gem 'bcrypt'
 
 gem 'pony', '~> 1.11'
 
+gem 'whenever', :require => false
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

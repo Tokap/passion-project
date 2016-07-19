@@ -29,7 +29,7 @@ post '/login' do
   if @user
     #success
     session[:user_id] = @user.id
-    redirect "/" #PLACEHOLDER
+    redirect "/"
   else
     #failure
     @user = User.new(user_hash)

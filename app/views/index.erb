@@ -1,6 +1,6 @@
 <section class="homepage-header">
-	<h1>The JHunters Reprieve</h1>
-	<h2>Job Hunt Tracker and Monotony Reduction System</h2>
+	<h1>JHunters Reprieve</h1>
+	<h3>Make Job Hunting less painful</h3>
 </section>
 
 <% if logged_in? %>
@@ -9,4 +9,18 @@
   	<%= erb :'/applications/_details', locals: {application: application} %>
   <% end %>
   </section>
+<% end %>
+
+<% if !logged_in? %>
+	<div class="mission-statement-section">
+		<h2 id="pitch">The Pitch</h2>
+		<p class="mission-statement">Applying for jobs over any extended period of time is terrible. I mean, mind blowingly, rage inducingly terrible. The goal of this web application is to simplify the process and make the process understandable at a glance.</p>
+		<p class="mission-statement">The homepage shows the status of each of your applications at a glance. This display uses colors to quickly identify those applications that require further attention. The most recent applications will bubble to the top. The color code is:</p><br>
+		<p class="mission-statement-green">Green: 1-2 weeks old. Followup!</p><br>
+		<p class="mission-statement-amber">Amber: Less than 1 week old. Hold off.</p><br>
+		<p class="mission-statement-blue">Chill Blue: 2-4 weeks old. Likely cold.</p><br>
+		<p class="mission-statement-gray">Gray: Over 1 month old. Abandon hope.</p><br>
+		<p class="mission-statement">The area to insert a new application as well as the home view are optimized for mobile use and on-the-go review. For a more in-depth view, the "My Applications" section provides an excel style breakdown of your current applications in alphabetical order.</p>
+	<div>
+
 <% end %>
