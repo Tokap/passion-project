@@ -19,16 +19,24 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every :day, :at => '3:20pm' do
-	# File.open(test, 'w') { |file| file.write("your text") }
+every :sunday, :at => '7:00pm' do
 	rake "email:send"
 end
 
-# (1..24).each do |hour|
-# 	(0..59).each do |minute|
-# 		every :day, :at => "#{hour}:#{minute}" do
-# 			# File.open(test, 'w') { |file| file.write("your text") }
-# 			command "ruby /Users/tokap/Passion-project/passion-project/test.rb"
-# 		end
-# 	end
+####### HOW ITLL WORK - Custom Method for emails ############
+# every :sunday, :at => '7pm' do #
+#   runner "User.send_email"
+# end
+
+# Class User < ActiveRecord::Base
+	# def send_email
+	# 	applications = self.applications
+	# 	app_summary = ""
+	# 	applications.each do |application|
+	# 		app_summary << "<h1>#{application.company}</h1><p>#{application.position_title}</p><p>#{application.contact_name}</p>
+	# 		<p><#{application.phone}/p><p><#{application.email}/p><p><#{application.notes}/p><br><br>"
+	# 	end
+	# 	Pony.mail(:to => 'allenpatrick86@gmail.com', :from => 'allenpatrick86@gmail.com', :subject => 'Your Recent Job Summary',
+	# 		:body => "#{app_summary}"
+	# end
 # end

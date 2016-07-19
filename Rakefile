@@ -8,7 +8,8 @@ require 'active_support/core_ext'
 namespace :email do
   desc "Send an email"
   task :send do
-    File.write('test.txt', 'This is a test. Let us hope that it works. ' + DateTime.now.to_s)
+    Pony.mail(:to => 'allenpatrick86@gmail.com', :from => 'allenpatrick86@gmail.com', :subject => 'Your Recent Job Summary', :body => 'Hello there.')
+    # File.write('test.txt', 'This is a test. Let us hope that it works. ' + DateTime.now.to_s)
   end
 end
 
